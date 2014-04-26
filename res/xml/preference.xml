@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--            android:action="android.intent.action.VIEW" -->
+    <PreferenceCategory
+        android:key="account_settings"
+        android:title="@string/pref_account_settings_title"
+        android:summary="@string/pref_account_settings_summary">
+        <intent
+            android:action="org.agendamate.android.activity.Preferences.EDIT"
+            android:targetPackage="org.agendamate"
+            android:targetClass="org.agendamate.preferences.PreferencesActivity" />
+        <EditTextPreference
+            android:title="@string/pref_user_name"
+            android:summary="@string/pref_user_name_summary"
+            android:key="prefUsername" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Data Sync">
+        <CheckBoxPreference
+            android:key="pref_autosync"
+            android:title="@string/title_prefs_autosync"
+            android:summary="@string/summary_prefs_autosync"
+            android:defaultValue="true" />
+        <ListPreference
+            android:key="pref_sync_target"
+            android:title="@string/title_prefs_sync_target"
+            android:summary="@string/summary_prefs_sync_target"
+            android:dialogTitle="@string/title_prefs_sync_freq"
+            android:enabled="true"
+            android:entryValues="@array/array_prefs_target_cal_acct"
+            android:entries="@array/array_prefs_target_cal_acct_entries"
+            android:defaultValue="array_prefs_target_cal_acct_default"
+            android:fragment="org.agendamate.Preferences$MyPreferenceFragment"
+            android:selectable="true" />
+        <!--
+        this failed
+                <Spinner
+                    android:id="@+id/prefs_sync_freq"
+                    android:entries="@array/array_prefs_sync_freq_entries"
+                    android:prompt="@string/title_prefs_sync_freq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+        -->
+        <ListPreference
+            android:key="pref_sync_freq"
+            android:title="@string/title_prefs_sync_freq"
+            android:summary="@string/summary_prefs_sync_freq"
+            android:entryValues="@array/array_prefs_sync_freq_values"
+            android:entries="@array/array_prefs_sync_freq_entries"
+            android:defaultValue="array_prefs_sync_freq_default"
+            android:selectable="true" />
+        <CheckBoxPreference
+            android:key="pref_manual_override"
+            android:title="@string/title_prefs_manual_override"
+            android:summary="@string/summary_prefs_manual_override"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_calendar_setup">
+        <ListPreference
+            android:key="calendar_timezone_setting"
+            android:title="@string/prefs_calendar_title_timezone"
+            android:summary="@string/prefs_calendar_summary_timezone"
+            android:entryValues="@array/array_prefs_timezone_values"
+            android:entries="@array/array_prefs_timezone_entries"
+            android:defaultValue="array_prefs_timezone_default"
+            android:selectable="true"></ListPreference>
+        <CheckBoxPreference
+            android:key="calendar_privacy"
+            android:summary="@string/prefs_calendar_summary_private"
+            android:title="@string/prefs_calendar_title_private"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Application Support">
+        <SwitchPreference
+            android:key="pref_app_shortcut"
+            android:title="@string/title_prefs_shortcut"
+            android:summary="@string/summary_prefs_shortcut"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

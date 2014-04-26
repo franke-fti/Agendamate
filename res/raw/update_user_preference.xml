@@ -1,0 +1,11 @@
+<entry xmlns="http://www.w3.org/2005/Atom">
+    <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <div class="preference">
+                <span class="key">%1$s</span>
+                <span class="value">%2$s</span>
+            </div>
+        </div>
+    </content>
+</entry>
+

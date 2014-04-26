@@ -1,0 +1,9 @@
+<Preferences xmlns="http://osafoundation.org/cosmo/CMP/">
+    <UserAccount>
+        <username>%1$s</username>
+        <password>%2$s</password>
+        <firstName>%3$s</firstName>
+        <lastName>%4$s</lastName>
+        <email>%5$s</email>
+    </UserAccount>
+</Preferences>

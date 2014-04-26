@@ -1,0 +1,33 @@
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="org.agendamate.PreferenceWithHeaders$Prefs1Fragment"
+            android:icon="@drawable/ic_launcher"
+            android:title="@string/location_preferences"
+            android:summary="@string/location_summary_preferences">
+        <extra
+            android:name="include_internet_business_name"
+            android:value="include_internet_business_value"/>
+        <extra
+            android:name="country"
+            android:value="include_country"/>
+    </header>
+
+    <!-- header android:fragment="org.agendamate.PreferenceWithHeaders$Prefs1Fragment"
+            android:icon="@drawable/ic_launcher"
+            android:title="@string/location_filters"
+            android:summary="@string/location_summary_filters">
+        <extra
+            android:name="country"
+            android:value="include_country"/>
+    </header -->
+
+
+    <header android:icon="@drawable/am_logo"
+            android:title="@string/preferences_intent"
+            android:summary="Launches an Intent.">
+        <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.agendamate.org" />
+    </header>
+
+</preference-headers>

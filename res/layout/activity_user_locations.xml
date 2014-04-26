@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="top|center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserLocationsActivity">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+
+    <!-- TextView
+        android:text="@string/title_activity_user_locations"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="1" / -->
+
+    <TextView
+        android:text="@string/locationInstructions"
+        android:typeface="sans"
+        android:textColor="#2B3856"
+        android:background="#F87217"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dip"
+        android:paddingBottom="2dip"
+        android:gravity="center" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dip">
+
+        <TextView
+            android:text="@string/user_locations_existing_list"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="left" />
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/location_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:title="@string/location_spinner_title"
+            android:prompt="@string/location_spinner_title"
+            android:hint="@string/location_spinner_title"
+            android:drawSelectorOnTop = "true"/>
+    </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/locationName"
+            android:layout_width="400dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="@string/locationName" />
+
+        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/defaultLoc"
+            android:orientation="horizontal"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/DefaultLoc"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <EditText
+            android:id="@+id/addressLine1"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="@string/addressLine1" />
+
+        <EditText
+            android:id="@+id/addressLine2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="@string/addressLine2" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="@string/city" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linear1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/state_spinner_title"
+                android:drawSelectorOnTop = "true"/>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="3dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/postalCode"
+                android:layout_width="200dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:hint="@string/postalCode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linear2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/distance_spinner"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:title="@string/distance_spinner_title"
+                android:prompt="@string/distance_spinner_title"
+                android:hint="@string/distance_spinner_title"
+                android:drawSelectorOnTop = "true"/>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/includeInternetBiz"
+                android:paddingTop="2dip"
+                android:paddingBottom="2dip"
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/IncludeInternetBiz"
+                android:checked="true"/>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dip">
+
+            <Button
+                android:id="@+id/updateEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AlertButtonCreateLocation"
+                android:onClick="sendMessage" />
+
+            <Button
+                android:id="@+id/deleteEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AlertButtonDelete"
+                android:onClick="deleteEntry"/>
+
+        </LinearLayout>
+
+    </LinearLayout>

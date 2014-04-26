@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_login"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/action_sign_in_short" />
+
+    <item
+        android:id="@+id/action_forgot_password"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@android:drawable/ic_secure"
+        android:title="@string/action_forgot_password" />
+
+
+</menu>

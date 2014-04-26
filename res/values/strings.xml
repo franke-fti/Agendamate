@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello World!</string>
+    <string name="app_name">Agendamate</string>
+    <string name="AMblank"> </string>
+    <string name="AMslogan">Scheduling in Context</string>
+    <string name="selectedCollections">Selected Collections</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_select_location">Location</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_preferences">Preferences</string>
+    <string name="action_personalListing">My Configuration</string>
+    <string name="action_businessListing">Find Business</string>
+    <string name="action_change_user">Change User</string>
+    <string name="action_location_mgmt">Locations</string>
+    <string name="action_view_calendar">View Calendar</string>
+    <string name="action_update_user">Update User</string>
+
+    <string name="image">image</string>
+
+    <!-- connection = DriverManager.getConnection("jdbc:mysql://username@ec2-host/myDBname, MYSQLUSER, MYSQLPASS)
+    -->
+
+    <!-- Preferences Form -->
+    <string name="pref_title">Agendamate Preferences</string>
+    <string name="pref_account_settings_title">Agendamate Account Settings</string>
+    <string name="pref_account_settings_summary">Settings for AgendaMate Accounts</string>
+    <!-- jx20140121 -->
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+
+    <string name="AMaddr">http://54.221.198.40/</string>
+    <string name="AMSecureAddr">https://54.221.198.40:8443/</string>
+    <string name="AMurl">http://54.221.198.40:8080/chandler/cmp/signup</string>
+    <string name="AmSecureSignupUrl">https://54.221.198.40:8443/chandler/cmp/signup</string>
+    <string name="AMSecureUserUpdateUrl">https://54.221.198.40:8443/chandler/cmp/account</string>
+    <string name="AMSecureLogin">https://54.221.198.40:8443/chandler/atom/user/</string>
+    <string name="AMSecureAccount">https://54.221.198.40:8443/chandler/cmp/user/</string>
+
+    <!-- SQL Database access -->
+    <string name="DBdriver">com.mysql.jdbc.Driver</string>
+    <string name="DBurl">jdbc:mysql://pdillon@54.221.198.40:3306/Agendamate</string>
+    <string name="DBuser">Agendamate_admin</string>
+    <string name="DBpassword">C0c0Emmy</string>
+
+    <string name="DATABASE_VERSION">1</string>
+    <string name="DATABASE_NAME">Agendamate</string>
+    <string name="table_BusinessListings">BusinessListings</string>
+    <!--
+        <string name="NAICDesc">NAICdesc</string>
+        <string name="NAME">name</string>
+        <string name="STREET1">street1</string>
+        <string name="STREET2">street2</string>
+        <string name="CITY">city</string>
+        <string name="STATE">state</string>
+        <string name="ZIP_CODE">zip_code</string>
+        <string name="PWCLEAR">password</string>
+        <string name="USERNAME">username</string>
+
+        <string name="bizQuery">select c.NAICdescription, s.name, s.street1, s.street2, s.city, s.state, s.zipcode from user_search_attributes s, NAICcodes c where s.NAICScode=c.NAICcode;</string>
+    -->
+    <string name="localDB">//data/data/Agendamate/databases/Agendamate.db3</string>
+
+    <string name="title_activity_create_user">Create New Account</string>
+    <string name="title_activity_update_user">Update User Account</string>
+    <string name="title_activity_collection_selection">Calendar Collection Selection</string>
+    <string name="AMWelcome">Scheduling in Context</string>
+    <string name="AMAddress">Local Address used to filter businesses by distance</string>
+
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="emailaddr">Email Address</string>
+    <string name="addressLine1">Address Line 1</string>
+    <string name="addressLine2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="state_spinner_title">State Title</string>
+    <string name="postalCode">Postal Code</string>
+    <string name="distance_spinner_title">Distance Radius</string>
+    <string name="IncludeInternetBiz">Include Internet Businesses</string>
+    <string name="DefaultLoc">Default Location</string>
+    <string name="bizListingHeader">Business Categories</string>
+    <string name="locationName">Location Name</string>
+    <string name="location_spinner_title">Select Location</string>
+
+    <!-- Preferences -->
+    <string name="PrefFileName">AgendamateSharedPreferences</string>
+    <string name="hasAMAccount">hasAMAccount</string>
+
+    <!-- Main Activity Form -->
+    <string name="icon_content_description">Business Icon</string>
+    <string name="main_activity_text">Textview text</string>
+
+    <!-- Button Text -->
+    <string name="button_send">Send</string>
+    <string name="update_accounts">Update Accounts</string>
+
+    <string name="AlertButtonDecline">Decline</string>
+    <string name="AlertButtonCreateAcct">Create Account</string>
+    <string name="AlertButtonUpdateAcct">Update Account</string>
+    <string name="AlertButtonOK">OK</string>
+    <string name="AlertButtonCancel">Cancel</string>
+    <string name="AlertButtonUpdateSubscriptions">Update Subscriptions</string>
+    <string name="AlertButtonLoginUser">Login Existing User</string>
+    <string name="AlertButtonNewUser">Create New User</string>
+    <string name="AlertButtonCreateLocation">Update Location</string>
+    <string name="AlertButtonDelete">Delete</string>
+
+    <!-- Alert Titles -->
+    <string name="alertTitleAccountOption">Create New User</string>
+    <string name="alertTitleNewAccount">New Account Status</string>
+    <string name="alertTitleUpdateAccount">Update Account Status</string>
+    <string name="alertTitleUserLogin">User Account Validation</string>
+    <string name="alertTitleConfigureSubscriptions">Manage Subscriptions</string>
+    <string name="alertTitleSelectBranch">Select Business Branch</string>
+    <string name="alertTitleNewLocation">New Location Status</string>
+    <string name="alertTitleDeleteLocation">Delete Location</string>
+
+    <!-- Alert Messages -->
+    <string name="AMSubscriptionsUpdated">Calendar Subscriptions Updated</string>
+    <string name="AMAccountCreated">Account Created Successfully</string>
+    <string name="AMAccountDeclined">AMAccountDeclined</string>
+    <string name="AMAccountFound">Account Found</string>
+    <string name="AMAccountOffered">Agendamate Accounts are required for managing account sharing.\n\nIt is not required for accessing business calendars.</string>
+
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_all_fields_required">All fields are required</string>
+    <string name="error_valid_user_and_pw_required">A valid username and password are required to sign in</string>
+    <string name="error_local_address_required">Local address requires a valid city, state and/or zip code</string>
+
+    <!-- Account Preferences -->
+    <string name="privacy_preferences">Privacy</string>
+    <string name="privacy_contacts_summary">Contacts Summary</string>
+    <string name="privacy_contacts_title">Contacts Title</string>
+
+    <string name="outgoing_preferences">Outgoing Preferences</string>
+    <string name="allow_mail">Allow Mail</string>
+    <string name="allow_mail_text">Allow Mail Text</string>
+
+    <string name="title_activity_user_locations">User Location Management</string>
+    <string name="user_locations_existing_list">Existing Locations</string>
+    <string name="locationInstructions">Manage one or more locations, controlling the businesses viewed and available.  The address and distance combination is used to identify businesses within that radius.</string>
+    <string name="location_preferences">Location Preferences</string>
+    <string name="location_summary_preferences">Setting Business Location Filters</string>
+    <string name="title_fragment_preference">Location Preference Settings</string>
+    <string name="summary_fragment_preference">Set preferences for filtering available businesses by location</string>
+
+    <string name="internet_business_checkbox_title">Include Internet Businesses</string>
+    <string name="internet_business_checkbox_summary">Select to include internet-only businesses</string>
+
+    <!-- string name="title_location_preferences">Location Filters</string -->
+
+    <string name="retail_location_filters">Retail Location Filters</string>
+
+    <string name="dialog_title_filter_country_preference">Select one or more countries</string>
+    <string name="summary_filter_country_preference"></string>
+    <string name="title_filter_country_preference">Country</string>
+
+    <string name="dialog_title_filter_region_preference">Select one or more regions</string>
+    <string name="summary_filter_region_preference"></string>
+    <string name="title_filter_region_preference">Region</string>
+
+
+    <!--string name="dialog_title_location_preference">Dialog Location Preference</string>
+    <string name="location_filters">Location Filters</string>
+    <string name="location_summary_filters">Summary Location Filters</string -->
+
+    <!-- string name="summary_location_preferences">Retail Location Filter</string>
+    <string name="entries_filter_country_preference">Entries Filter Country</string -->
+
+    <string name="preference_two">Preference Level 2</string>
+    <string name="preferences_intent">Preference Intent</string>
+
+
+    <string name="inline_preferences">Inline Preferences</string>
+    <string name="title_checkbox_preference">Title Checkbox Preference</string>
+    <string name="summary_checkbox_preference">Summary Checkbox Preference</string>
+
+    <string name="dialog_based_preferences">Dialog Based Preferences</string>
+    <string name="title_edittext_preference">Title Edittext Preference</string>
+    <string name="summary_edittext_preference">Summary Edittext Preference</string>
+    <string name="dialog_title_edittext_preference">Dialog Title EditText Preference</string>
+
+    <string name="title_list_preference">Title List Preference</string>
+    <string name="summary_list_preference">Summary List Preference</string>
+    <string name="dialog_title_list_preference">Dialog Title List Preference</string>
+
+    <string name="title_intent_preference">Title Intent Preference</string>
+    <string name="summary_intent_preference">Summary Intent Preference</string>
+
+    <string name="preference_attributes">Preference Attributes</string>
+    <string name="title_parent_preference">Title Parent Preference</string>
+    <string name="summary_parent_preference">Summary Parent Preference</string>
+
+    <string name="title_child_preference">Title Child Preference</string>
+    <string name="summary_child_preference">Summary Child Preference</string>
+
+    <string name="sync_attributes">Synchronization Attributes</string>
+    <string name="title_sync_preference">Sync Preferences</string>
+
+    <!-- jx20140112 new prefs -->
+
+    <string name="title_prefs_shortcut">Shortcut</string>
+    <string name="summary_prefs_shortcut">Display app shortcut</string>
+
+    <string name="title_prefs_autosync">Auto-Sync</string>
+    <string name="summary_prefs_autosync">Automatic Calendar Sync</string>
+
+    <string name="title_prefs_sync_target">Sync Target</string>
+    <string name="summary_prefs_sync_target">Sync to this Calendar Account</string>
+
+    <string name="title_prefs_sync_freq">Sync Frequency</string>
+    <string name="summary_prefs_sync_freq">Calendar Sync Frequency</string>
+
+    <string name="array_prefs_sync_freq_default">daily</string>
+
+    <string name="title_prefs_manual_override">Manual Override</string>
+    <string name="summary_prefs_manual_override">Review and accept individual calendar updates</string>
+
+    <string name="prefs_calendar_setup">Calendar Preferences</string>
+    <string name="prefs_calendar_title_timezone">Calendar Timezone</string>
+    <string name="prefs_calendar_summary_timezone">Timezone for app calendars</string>
+
+    <string name="array_prefs_timezone_default">America/New_York</string>
+
+    <string name="prefs_calendar_title_private">Mark Private</string>
+    <string name="prefs_calendar_summary_private">Mark Calendar Entries Private by Default</string>
+
+    <!-- jx20140210 create user -->
+    <string name="create_user_w_sync">Sync It</string>
+
+
+    <!-- Main Activity - business listing database selection strings -->
+    <string name="checkDBExists">SELECT count(*) FROM sqlite_master WHERE type=</string>
+    <string name="select_business_count">SELECT COUNT(*) FROM BusinessListings</string>
+    <string name="select_business_categories">SELECT DISTINCT NAICdescription FROM BusinessListings order by NAICdescription</string>
+    <string name="select_business_list">SELECT Name FROM BusinessListings where NAICdescription =</string>
+    <string name="show_configured"> AND Name in (SELECT Name FROM Company where NAICdescription =</string>
+    <string name="hide_configured"> AND Name not in (SELECT Name FROM Company where NAICdescription =</string>
+    <string name="show_all"> AND Name not in (SELECT displayname FROM HideListings) </string>
+
+</resources>

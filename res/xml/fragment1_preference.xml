@@ -1,0 +1,59 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+            android:title="@string/location_preferences">
+
+        <!-- This PreferenceScreen tag sends the user to a new fragment of
+             preferences.  If running in a large screen, they can be embedded
+             inside of the overall preferences UI. -->
+        <!-- PreferenceScreen
+                android:fragment="org.agendamate.PreferenceWithHeaders$Prefs1FragmentInner"
+                android:title="@string/title_fragment_preference"
+                android:summary="@string/summary_fragment_preference" -->
+            <!-- Arbitrary key/value pairs can be included for fragment arguments -->
+            <!-- extra android:name="someKey" android:value="somePrefValue" / -->
+            
+        <CheckBoxPreference
+                android:key="include_internet_business_name"
+                android:title="@string/internet_business_checkbox_title"
+                android:summary="@string/internet_business_checkbox_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/retail_location_filters">
+
+        <ListPreference
+            android:dialogTitle="@string/dialog_title_filter_country_preference"
+            android:key="country_list_preference"
+            android:summary="@string/summary_filter_country_preference"
+            android:title="@string/title_filter_country_preference"
+            android:entries="@array/country_list_preference"
+            android:entryValues="@array/country_list_preference"
+            android:defaultValue="@array/country_list_preference_default"/>
+
+        <ListPreference
+            android:dialogTitle="@string/dialog_title_filter_region_preference"
+            android:key="region_list_preference"
+            android:summary="@string/summary_filter_region_preference"
+            android:title="@string/title_filter_region_preference"
+            android:entries="@array/region_list_preference"
+            android:entryValues="@array/region_list_preference"
+            android:defaultValue="@array/region_list_preference_default"/>
+
+        <!-- This PreferenceScreen tag sends the user to a completely different
+             activity, switching out of the current preferences UI. -->
+        <!-- PreferenceScreen
+                android:title="@string/title_intent_preference"
+                android:summary="@string/summary_intent_preference">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.android.com" />
+
+        </PreferenceScreen -->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_prefs_target_cal_acct">
+        <item>AgendaMate</item>
+        <item>Android</item>
+        <item>Google</item>
+    </string-array>
+    <string-array name="array_prefs_target_cal_acct_entries">
+        <item>agendamate</item>
+        <item>android</item>
+        <item>google</item>
+    </string-array>
+    <string name="array_prefs_target_cal_acct_default">AgendaMate</string>
+    <string-array name="array_prefs_sync_freq_values">
+        <item>daily</item>
+        <item>twice a day</item>
+        <item>hourly</item>
+    </string-array>
+    <string-array name="array_prefs_sync_freq_entries">
+        <item>24</item>
+        <item>12</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="array_prefs_timezone_values">
+        <item>America/New_York</item>
+        <item>America/Chicago</item>
+        <item>America/Denver</item>
+        <item>America/Los_Angeles</item>
+    </string-array>
+    <string-array name="array_prefs_timezone_entries">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="country_list_preference">
+        <item>USA</item>
+        <item>Canada</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>United Kingdom</item>
+    </string-array>
+    <string-array name="country_list_preference_default">
+        <item>USA</item>
+    </string-array>
+
+    <string-array name="region_list_preference">
+        <item>New England</item>
+        <item>Mideast</item>
+        <item>Great Lakes</item>
+        <item>Plains</item>
+        <item>Southeast</item>
+        <item>Southwest</item>
+        <item>Rocky Mountain</item>
+        <item>Far West</item>
+    </string-array>
+    <string-array name="region_list_preference_default"></string-array>
+
+    <string-array name="state_array">
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+
+    <string-array name="distance_array">
+        <item>0</item>
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+    </string-array>
+
+    <!--string-array name="entryvalues_list_preference">
+        <item>countryvalue1</item>
+        <item>countryvalue2</item>
+    </string-array -->
+</resources>

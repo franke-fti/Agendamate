@@ -1,0 +1,50 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/preference_attributes">
+
+        <CheckBoxPreference
+                android:key="parent_checkbox_preference"
+                android:title="@string/title_parent_preference"
+                android:summary="@string/summary_parent_preference" />
+
+        <!-- The visual style of a child is defined by this styled theme attribute. -->
+        <CheckBoxPreference
+                android:key="child_checkbox_preference"
+                android:dependency="parent_checkbox_preference"
+                android:layout="?android:attr/preferenceLayoutChild"
+                android:title="@string/title_child_preference"
+                android:summary="@string/summary_child_preference" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/retail_location_filters">
+
+        <!-- EditTextPreference
+            android:key="location_preferences"
+            android:title="@string/title_location_preferences"
+            android:summary="@string/summary_location_preferences"
+            android:dialogTitle="@string/dialog_title_location_preference" / -->
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="@string/title_filter_country_preference"
+            android:summary="@string/summary_filter_country_preference"
+            android:entries="@array/country_list_preference"
+            android:entryValues="@array/country_list_preference"
+            android:dialogTitle="@string/dialog_title_filter_country_preference" />
+
+        <MultiSelectListPreference
+            android:dialogTitle="@string/dialog_title_filter_region_preference"
+            android:key="region_list_preference"
+            android:summary="@string/summary_filter_region_preference"
+            android:title="@string/title_filter_region_preference"
+            android:entries="@array/region_list_preference"
+            android:entryValues="@array/region_list_preference"
+            android:defaultValue="@array/region_list_preference_default"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
